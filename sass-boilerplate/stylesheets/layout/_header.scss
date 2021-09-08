@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+    margin-top: 1.5em;
+}
+
+// -----------------------------------------------------------------------------
+// FOR MOBILE: Handles dropdown button functionality
+// -----------------------------------------------------------------------------
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dropbtn {
+    align-items: flex-end;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding-right: 1em;
+    margin: 0;
+}
+
+#nav-list {
+    list-style-type: none;
+    flex-basis: 100%;
+    text-align: center;
+    padding-left: 0.1em;
+    background-color: $nav-color;
+    margin: 0;
+
+    li {
+        margin: 30px 0;
+        a {
+            color: white;
+        
+            &:hover {
+                opacity: 0.7;
+                text-decoration: underline;
+            }
+
+            &:active, &:focus {
+                box-shadow: none;
+                border:3px solid white;  
+            }
+        }
+    }
+}
+
+.show-list {
+    display: none;
+}
+
+.nav-background {
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+.view-plans-nav {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 8px 0;
+    color: white;
+    border: 2px white solid;
+}
+
+// -----------------------------------------------------------------------------
+// FOR MOBILE: Handles the company logo positioning and dimensions
+// -----------------------------------------------------------------------------
+
+.company-logo {
+    padding-left: 1em;
+    height: 25px;
+    width: 125px;
+}
+
+
+// -----------------------------------------------------------------------------
+// FOR IPAD AND DESKTOP: Handles the company logo positioning and dimensions
+// -----------------------------------------------------------------------------
+
+@media all and (min-width: $tablet) {
+    @import '_header_tablet';
+}

@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer-logo {
+    position: relative;
+    padding-top: 120px;
+}
+
+.footer-background {
+    position: relative;
+    width: 100%;
+}
+
+.footer-company-logo {
+    position: absolute;
+    top: 210px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.footer-title {
+    color: rgb(100, 103, 104)
+}
+
+.social-list {
+    position: absolute;
+    top:80%;
+    right: 0;
+    left: 30%;
+    bottom: 0;
+
+    // For better centering of social media icons on iphone 6/7/8 plus 
+    @media screen and (min-width: $iphone678-plus) {
+        left: 31%;
+    }
+
+    li {
+        display: inline;
+        margin: 0 5px;
+    }
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-line {
+    margin-top: 20px;
+    width: 80%;
+    color:rgb(100, 103, 104);
+}
+
+.footer-lists {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+
+    li:first-child {
+        padding-bottom: 20px;
+    }
+
+    li:nth-child(n+2) {
+        margin: 10px 0;
+    }
+
+    li:last-child {
+        padding-bottom: 20px;
+    }
+
+    a {
+        color: black;
+    }
+}

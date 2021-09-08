@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// FOR IPAD AND DESKTOP
+// -----------------------------------------------------------------------------
+
+// Remove mobile nav button
+.dropbtn {
+    display: none;
+}
+
+.nav {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav-background {
+    display: none;
+}
+
+.show-list {
+    display: block;
+}
+
+// End remove mobile nav button stylings
+
+#nav-list { 
+    flex-basis: auto;
+    background-color: $nav-bgcolor-desktop;
+
+    li {
+        display: inline;
+        margin-left: 1em;
+        a {
+            color: $nav-color-desktop-font;
+           
+
+            &:hover, &:focus, &:active {
+                text-decoration: none;
+                color: black;
+                border: 2px white solid;
+            }
+        }
+    }
+}
+
+.view-plans-nav {
+    display: inline;
+}
+
+.container {
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
