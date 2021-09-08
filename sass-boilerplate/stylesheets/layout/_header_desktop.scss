@@ -10,7 +10,7 @@
 .nav {
     flex-wrap: nowrap;
     align-items: center;
-    gap: 2em;
+
 }
 
 .nav-background {
@@ -23,7 +23,13 @@
 
 // End remove mobile nav button stylings
 
-#nav-list { 
+.container {
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header-content { 
     flex-basis: auto;
     background-color: $nav-bgcolor-desktop;
 
@@ -34,21 +40,31 @@
             color: $nav-color-desktop-font;
            
 
-            &:hover, &:focus, &:active {
+            &:hover {
                 text-decoration: none;
                 color: black;
-                border: 2px white solid;
+            }
+
+            &:focus {
+                border: none;
             }
         }
+
     }
 }
 
-.view-plans-nav {
+#view-plans-nav-desktop {
     display: inline;
+    border: 3px black solid;
+    color: black;
+    padding: 0.25em 1.7em;
+
+
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border: 3px black solid;
+    }
 }
 
-.container {
-    width: 80%;
-    max-width: 1180px;
-    margin: 0 auto;
-}

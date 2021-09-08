@@ -24,7 +24,7 @@ header {
     margin: 0;
 }
 
-#nav-list {
+.header-content {
     list-style-type: none;
     flex-basis: 100%;
     text-align: center;
@@ -36,15 +36,11 @@ header {
         margin: 30px 0;
         a {
             color: white;
-        
-            &:hover {
-                opacity: 0.7;
-                text-decoration: underline;
-            }
 
             &:active, &:focus {
                 box-shadow: none;
-                border:3px solid white;  
+                border: 3px solid white; 
+                text-decoration: none; 
             }
         }
     }
@@ -63,10 +59,10 @@ header {
 .view-plans-nav {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     padding: 8px 0;
     color: white;
-    border: 2px white solid;
+    border: 3px white solid;
 }
 
 // -----------------------------------------------------------------------------
@@ -84,6 +80,6 @@ header {
 // FOR IPAD AND DESKTOP: Handles the company logo positioning and dimensions
 // -----------------------------------------------------------------------------
 
-@media all and (min-width: $tablet) {
-    @import '_header_tablet';
+@media all and (min-width: $desktop) {
+    @import '_header_desktop';
 }

@@ -454,7 +454,7 @@ header {
   margin: 0;
 }
 
-#nav-list {
+.header-content {
   list-style-type: none;
   flex-basis: 100%;
   text-align: center;
@@ -462,19 +462,16 @@ header {
   background-color: #343238;
   margin: 0;
 }
-#nav-list li {
+.header-content li {
   margin: 30px 0;
 }
-#nav-list li a {
+.header-content li a {
   color: white;
 }
-#nav-list li a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
-}
-#nav-list li a:active, #nav-list li a:focus {
+.header-content li a:active, .header-content li a:focus {
   box-shadow: none;
   border: 3px solid white;
+  text-decoration: none;
 }
 
 .show-list {
@@ -489,10 +486,10 @@ header {
 .view-plans-nav {
   display: block;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
   padding: 8px 0;
   color: white;
-  border: 2px white solid;
+  border: 3px white solid;
 }
 
 .company-logo {
@@ -501,7 +498,7 @@ header {
   width: 125px;
 }
 
-@media all and (min-width: 48em) {
+@media all and (min-width: 55em) {
   .dropbtn {
     display: none;
   }
@@ -509,7 +506,6 @@ header {
   .nav {
     flex-wrap: nowrap;
     align-items: center;
-    gap: 2em;
   }
 
   .nav-background {
@@ -520,31 +516,42 @@ header {
     display: block;
   }
 
-  #nav-list {
-    flex-basis: auto;
-    background-color: white;
-  }
-  #nav-list li {
-    display: inline;
-    margin-left: 1em;
-  }
-  #nav-list li a {
-    color: rgba(61, 56, 56, 0.59);
-  }
-  #nav-list li a:hover, #nav-list li a:focus, #nav-list li a:active {
-    text-decoration: none;
-    color: black;
-    border: 2px white solid;
-  }
-
-  .view-plans-nav {
-    display: inline;
-  }
-
   .container {
     width: 80%;
     max-width: 1180px;
     margin: 0 auto;
+  }
+
+  .header-content {
+    flex-basis: auto;
+    background-color: white;
+  }
+  .header-content li {
+    display: inline;
+    margin-left: 1em;
+  }
+  .header-content li a {
+    color: rgba(61, 56, 56, 0.59);
+  }
+  .header-content li a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .header-content li a:focus {
+    border: none;
+  }
+
+  #view-plans-nav-desktop {
+    display: inline;
+    border: 3px black solid;
+    color: black;
+    padding: 0.25em 1.7em;
+  }
+  #view-plans-nav-desktop:hover, #view-plans-nav-desktop:focus, #view-plans-nav-desktop:active {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 3px black solid;
   }
 }
 .footer-logo {
