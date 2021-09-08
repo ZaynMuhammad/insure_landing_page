@@ -1,13 +1,11 @@
 // Run checkForShowList() every time toggleDropdown is executed to maintain margins.
 function toggleDropdown() {
-  document.getElementById("dropdown-content").classList.toggle("show-list");
+  document.getElementById("nav-list").classList.toggle("show-list");
   checkForShowList();
 }
 
 function checkForShowList() {
-  if (
-    document.getElementById("dropdown-content").classList.contains("show-list")
-  ) {
+  if (document.getElementById("nav-list").classList.contains("show-list")) {
     document.querySelector("header").style.marginBottom = "1em";
     document.querySelector(".dropbtn").style.marginBottom = "0";
 
@@ -28,5 +26,12 @@ function checkForShowList() {
   }
 }
 
+function removeMobileNav() {
+  if (window.innerWidth === 768) {
+    document.getElementById("nav-list").classList.remove("show-list");
+  }
+}
+
 // Run it once on window start up
 checkForShowList();
+removeMobileNav();

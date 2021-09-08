@@ -439,7 +439,7 @@ header {
   margin-top: 1.5em;
 }
 
-.dropdown {
+.nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -454,7 +454,7 @@ header {
   margin: 0;
 }
 
-#dropdown-content {
+#nav-list {
   list-style-type: none;
   flex-basis: 100%;
   text-align: center;
@@ -462,17 +462,17 @@ header {
   background-color: #343238;
   margin: 0;
 }
-#dropdown-content li {
+#nav-list li {
   margin: 30px 0;
 }
-#dropdown-content li a {
+#nav-list li a {
   color: white;
 }
-#dropdown-content li a:hover {
+#nav-list li a:hover {
   opacity: 0.7;
   text-decoration: underline;
 }
-#dropdown-content li a:active, #dropdown-content li a:focus {
+#nav-list li a:active, #nav-list li a:focus {
   box-shadow: none;
   border: 3px solid white;
 }
@@ -501,6 +501,52 @@ header {
   width: 125px;
 }
 
+@media all and (min-width: 48em) {
+  .dropbtn {
+    display: none;
+  }
+
+  .nav {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .nav-background {
+    display: none;
+  }
+
+  .show-list {
+    display: block;
+  }
+
+  #nav-list {
+    flex-basis: auto;
+    background-color: white;
+  }
+  #nav-list li {
+    display: inline;
+    margin-left: 1em;
+  }
+  #nav-list li a {
+    color: rgba(61, 56, 56, 0.59);
+  }
+  #nav-list li a:hover, #nav-list li a:focus, #nav-list li a:active {
+    text-decoration: none;
+    color: black;
+    border: 2px white solid;
+  }
+
+  .view-plans-nav {
+    display: inline;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
 .footer-logo {
   position: relative;
   padding-top: 120px;
