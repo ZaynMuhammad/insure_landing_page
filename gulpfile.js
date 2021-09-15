@@ -15,6 +15,7 @@ function watchTask() {
       "sass-boilerplate/stylesheets/layout/_main-content.scss",
       "sass-boilerplate/stylesheets/layout/_footer.scss",
       "sass-boilerplate/stylesheets/layout/_header_desktop.scss",
+      "sass-boilerplate/stylesheets/layout/_main-content_desktop.scss",
     ],
     buildStyles
   );
