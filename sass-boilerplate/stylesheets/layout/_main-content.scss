@@ -75,60 +75,60 @@ h1, h2, p {
 // Business Description Section Styling
 // -----------------------------------------------------------------------------
 
-// .business-desc {
-//     padding-top: 100px;
-// }
+.business-desc {
+    padding-top: 100px;
+}
 
-// .main-title {
-//     padding-bottom: 30px;
-// }
+.main-title {
+    padding-bottom: 30px;
+}
 
-// hr {
-//     width: 40%;
-//     margin: 0 auto;
-//     color: rgb(161, 82, 157);
-//     opacity: 0.4;
-// }
+hr {
+    width: 40%;
+    margin: 0 auto;
+    color: rgb(161, 82, 157);
+    opacity: 0.4;
+}
 
-// .icons {
-//     display: block;
-//     margin: 0 auto;
-// }
+.icons {
+    display: block;
+    margin: 0 auto;
+}
 
-// .main-text {
-//     padding-bottom: 20px;
-// }
+.main-text {
+    padding-bottom: 20px;
+}
 
 // // -----------------------------------------------------------------------------
 // // Find Out How We Work Section Styling
 // // -----------------------------------------------------------------------------
 
-// .how-we-work-background {
-//     position: absolute;
-//     right: 0;
-// }
+.how-we-work-background {
+    position: absolute;
+    right: 0;
+}
 
-// .how-we-work-text {
-//     color: white;
-//     padding-top: 60px;
-// }
+.how-we-work-text {
+    color: white;
+    padding-top: 60px;
+}
 
-// .how-we-work {
-//     position: relative;
-//     background-color: $main-color;
-//     margin: 0 5%;
-//     padding-bottom: 70px;
-// }
+.how-we-work {
+    position: relative;
+    background-color: $main-color;
+    margin: 0 5%;
+    padding-bottom: 70px;
+}
 
-// .work-link {
-//     display: block;
-//     text-align: center;
-//     color: white;
-//     border: 2px white solid;
-//     width: 50%;
-//     padding: 8px 0;
-//     margin: 0 auto;
-// }
+.work-link {
+    display: block;
+    text-align: center;
+    color: white;
+    border: 2px white solid;
+    width: 50%;
+    padding: 8px 0;
+    margin: 0 auto;
+}
 
 
 @media all and (min-width: $desktop) {
