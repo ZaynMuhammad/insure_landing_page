@@ -739,19 +739,8 @@ hr {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(20, 2.5rem);
+    grid-template-rows: repeat(25, 2.5rem);
     gap: 1em;
-  }
-
-  .intro-image-mobile {
-    display: none;
-  }
-
-  .intro-image-desktop {
-    display: block;
-    grid-column: 7/9;
-    grid-row: 4;
-    z-index: 5;
   }
 
   .intro {
@@ -780,7 +769,7 @@ hr {
   }
 
   .view-plans {
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 11;
     padding: 0.2em 0.2em;
     margin: 0;
@@ -792,6 +781,17 @@ hr {
     text-decoration: none;
     color: black;
     background-color: white;
+  }
+
+  .intro-image-mobile {
+    display: none;
+  }
+
+  .intro-image-desktop {
+    display: block;
+    grid-column: 7/9;
+    grid-row: 4;
+    z-index: 5;
   }
 
   .left-image-desktop {
@@ -822,8 +822,8 @@ hr {
     display: grid;
     grid-column: 1/-1;
     grid-row: 15/-1;
-    gap: 1em;
-    grid-template-columns: subgrid;
+    gap: 2em;
+    grid-template-columns: repeat(11, 1fr);
     grid-template-rows: subgrid;
   }
 
@@ -832,12 +832,13 @@ hr {
     color: black;
     width: 40%;
     margin-left: 2em;
+    margin-top: 1.5em;
   }
 
   .main-title {
-    grid-column: 2/6;
+    grid-column: 1/6;
     font-size: 3.5rem;
-    margin: 0;
+    margin-left: 1.75em;
   }
 
   .icons {
@@ -846,18 +847,18 @@ hr {
 
   .snappy {
     grid-column: 2/5;
-    grid-row: 4;
+    grid-row: 5;
     margin-left: 1em;
   }
 
   .affordable {
     grid-column: 5/8;
-    grid-row: 4;
+    grid-row: 5;
   }
 
   .people {
-    grid-column: 8/10;
-    grid-row: 4;
+    grid-column: 8/11;
+    grid-row: 5;
   }
 
   .how-we-work {
