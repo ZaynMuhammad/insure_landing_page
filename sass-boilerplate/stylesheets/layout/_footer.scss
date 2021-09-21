@@ -72,3 +72,8 @@
         color: black;
     }
 }
+
+
+@media all and (min-width: $desktop) {
+    @import '_footer_desktop';
+}

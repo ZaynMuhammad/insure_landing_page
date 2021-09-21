@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(29, 2.95rem);
+    grid-template-rows: 0 0 repeat(29, 2.95rem);
     gap: 1em;
 }
 
@@ -146,7 +146,7 @@
 }
 
 // ================================================
-// HOW WE WORK BANNER SECTION STYLINGS
+// HOW WE WORK BANNER SECTION
 // ================================================
 
 .line-break-mobile {
@@ -193,6 +193,7 @@
 
 .how-we-work-background-desktop {
     // margin-left: 40em;
+    display: inline;
     grid-column: 3;
     grid-row: 1;
 }
