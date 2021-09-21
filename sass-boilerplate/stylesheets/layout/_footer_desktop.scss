@@ -65,6 +65,14 @@
 
     margin: 0;
     margin-left: 12.8em;
+
+    @media screen and (max-width: 1310px) {
+        margin-left: 11em;
+    }
+
+    @media screen and (max-width: 1140px) {
+        margin-left: 9.5em;
+    }
 }
 
 .social-list {
@@ -79,6 +87,14 @@
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 1310px) {
+        margin-right: 11em;
+    }
+
+    @media screen and (max-width: 1140px) {
+        margin-right: 9.5em;
     }
 }
 

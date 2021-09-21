@@ -7,7 +7,7 @@
     padding-top: 120px;
 }
 
-.footer-background {
+.footer-background-mobile {
     position: relative;
     width: 100%;
 }
@@ -36,6 +36,27 @@
     @media screen and (min-width: $iphone678-plus) {
         left: 31%;
     }
+
+    @media screen and (min-width: $tablet) {
+        left: 40%;
+    }
+
+    @media screen and (min-width: 680px) {
+        left: 40%;
+    }
+
+    @media screen and (min-width: 520px) {
+        left: 35%;
+    }
+
+    @media screen and (min-width: 620px) {
+        left: 39%;
+    }
+
+    @media screen and (min-width: 820px) {
+        left: 41%;
+    }
+
 
     li {
         display: inline;
@@ -71,6 +92,10 @@
     a {
         color: black;
     }
+}
+
+.footer-background-desktop {
+    display: none;
 }
 
 

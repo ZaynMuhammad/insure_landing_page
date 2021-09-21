@@ -5,6 +5,7 @@
     gap: 1em;
 }
 
+
 .intro {
     position: static;
     display: grid;
@@ -22,6 +23,12 @@
     // margin-left: 1em;
     font-size: 3.5rem;
     margin: 0;
+
+    @media screen and (max-width: 1230px) {
+        font-size: 3rem;
+        grid-column: 1/6;
+        margin-left: 2em;
+    }
 }
 
 .intro-description {
@@ -29,6 +36,11 @@
     grid-row: 7;
     text-align: left;
     font-size: 1.15rem;
+
+    @media screen and (max-width: 1230px) {
+        grid-column: 1/6;
+        margin-left: 5.2em;
+    }
 }
 
 .view-plans {
@@ -40,12 +52,19 @@
     justify-self: center;
     width: 77%;
     border: 2px white solid;
+    justify-self: left;
     
     &:hover {
         text-decoration: none;
         color: black;
         background-color: white;
     }
+
+    @media screen and (max-width: 1230px) {
+        grid-column: 1/3;
+        margin-left: 5em
+    }
+    
 }
 
 // ================================================
@@ -108,6 +127,10 @@
     grid-column: 1/6;
     font-size: 3.5rem;
     margin-left: 1.1em;
+
+    @media screen and (max-width: 1280px) {
+        grid-column: 1/7;
+    }
 }
 
 .icons {
@@ -171,6 +194,10 @@
     margin-left: 2em;
     padding-top: 0.8em;
     font-size: 3rem;
+
+    @media screen and (max-width: 1168px) {
+        font-size: 2.44rem;
+    }   
 }
 
 .work-link {
