@@ -552,7 +552,7 @@ header {
 
   #view-plans-nav-desktop {
     display: inline;
-    border: 3px black solid;
+    border: 2.39px black solid;
     color: black;
     padding: 0.25em 1.7em;
   }
@@ -560,7 +560,7 @@ header {
     text-decoration: none;
     color: white;
     background-color: black;
-    border: 3px black solid;
+    border: 2.39px black solid;
   }
 }
 .footer-logo {
@@ -912,6 +912,7 @@ hr {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 0 0 repeat(29, 2.95rem);
     gap: 1em;
+    row-gap: 2em;
   }
 
   .container {
@@ -930,12 +931,24 @@ hr {
     grid-template-rows: subgrid;
   }
 
+  .horizontal-line-intro {
+    display: inline;
+    grid-column: 2/4;
+    grid-row: 4;
+    color: white;
+    opacity: 100%;
+    width: 90%;
+    height: 0;
+    justify-self: center;
+    align-self: center;
+  }
+
   .intro-title {
     position: static;
     grid-column: 2/7;
-    grid-row: 4;
+    grid-row: 5;
     text-align: left;
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin: 0;
   }
 }
@@ -952,6 +965,7 @@ hr {
     grid-row: 7;
     text-align: left;
     font-size: 1.15rem;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 64em) and (max-width: 1230px) {
@@ -963,7 +977,7 @@ hr {
 @media all and (min-width: 64em) {
   .view-plans {
     grid-column: 2/4;
-    grid-row: 11;
+    grid-row: 9;
     padding: 1em 0.1em;
     line-height: 0.2em;
     margin: 0;

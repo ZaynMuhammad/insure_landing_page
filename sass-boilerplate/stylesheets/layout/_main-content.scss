@@ -140,6 +140,11 @@ hr {
     margin: 0 auto;
 }
 
+// =================================================================================
+// DESKTOP
+// =================================================================================
+
+// This hr line is for desktop
 
 @media all and (min-width: $desktop) {
     @import '_main-content_desktop';
