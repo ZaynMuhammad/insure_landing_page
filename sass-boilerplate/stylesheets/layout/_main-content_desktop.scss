@@ -146,8 +146,8 @@
 
 .main-title {
     grid-column: 1/6;
-    font-size: 3.5rem;
-    margin-left: 1.1em;
+    font-size: 4rem;
+    margin-left: 1.8em;
 
     @media screen and (max-width: 1280px) {
         grid-column: 1/7;
@@ -181,12 +181,20 @@
 
 .snappy-text, 
 .affordable-text, 
-.people-text,
-.snappy-title,
-.affordable-title,
+.people-text {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+h2 {
+    text-align: left;
+}
+
+.snappy-title
+.affordable-title
 .people-title {
     text-align: left;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 // ================================================
