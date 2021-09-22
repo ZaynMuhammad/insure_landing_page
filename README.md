@@ -16,8 +16,6 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -35,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Demo](https://your-live-site-url.com)
+- Live Site URL: [Demo](https://zaynmuhammad.github.io/insure_landing_page/)
 
 ## My process
 
@@ -47,8 +45,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - SASS/SCSS (https://sass-lang.com/)
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -73,4 +69,4 @@ I only added media queries for when there were major breaks in the page layout, 
 ## Author
 
 - Website - [Zayn Muhammad](zaynmuhammad.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername
+- Frontend Mentor - [@ZaynMuhammad](https://www.frontendmentor.io/profile/ZaynMuhammad)
