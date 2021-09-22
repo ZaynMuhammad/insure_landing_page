@@ -1,6 +1,6 @@
-// -----------------------------------------------------------------------------
-// FOR IPAD AND DESKTOP
-// -----------------------------------------------------------------------------
+// ========================================
+// REMOVING MOBILE CLASSES
+// ==========================================
 
 // Remove mobile nav button
 .dropbtn {
@@ -28,14 +28,15 @@
 }
 
 .container {
-    width: 78%;
-    max-width: 1200px;
+    width: 70%;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .header-content { 
     flex-basis: auto;
     background-color: $nav-bgcolor-desktop;
+    margin-right: 8em;
 
     li {
         display: inline;
@@ -56,6 +57,11 @@
 
     }
 }
+
+.company-logo {
+    margin-left: 10em;
+}
+
 
 #view-plans-nav-desktop {
     display: inline;

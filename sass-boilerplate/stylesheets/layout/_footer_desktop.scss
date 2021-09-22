@@ -2,6 +2,13 @@
 // FOOTER DESKTOP SECTION
 // ================================================
 
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -11,6 +18,10 @@
 .footer-bg {
     background-color: rgb(250, 249, 249);
 }
+
+// ================================================
+// FOOTER LISTS
+// ================================================
 
 .footer-items-1 {
     grid-column: 2;
@@ -36,6 +47,11 @@
 .footer-lists {
     text-align: left;
 }
+
+// ================================================
+// TOP OF FOOTER
+// ================================================
+
 
 .footer-line {
     grid-column: 2/6;
@@ -98,15 +114,6 @@
     }
 }
 
-.attribution {
-    grid-row: -1;
-    grid-column: 1/3;
-    justify-self: end;
-
-    font-size: 1rem;
-    text-align: left;
-}
-
 .footer-background-desktop {
     display: inline;
     position: absolute;
@@ -117,4 +124,17 @@
 
 .footer-background-mobile {
     display: none;
+}
+
+// ================================================
+//  CREDITS
+// ================================================
+
+.attribution {
+    grid-row: -1;
+    grid-column: 1/3;
+    justify-self: end;
+
+    font-size: 1rem;
+    text-align: left;
 }
