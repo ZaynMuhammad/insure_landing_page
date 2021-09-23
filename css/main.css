@@ -918,9 +918,9 @@ hr {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 0 0 0 0 repeat(21, 3.5rem);
+    grid-template-rows: 0 0 0 0 repeat(21, 3.97rem);
     gap: 1em;
-    row-gap: 2em;
+    row-gap: 1.5em;
   }
 
   .container {
@@ -960,7 +960,8 @@ hr {
     text-align: left;
     font-size: 4rem;
     margin: 0;
-    padding-top: 0.25em;
+    padding-top: 1em;
+    line-height: 1.15;
   }
 }
 @media screen and (min-width: 64em) and (max-width: 1230px) {
@@ -974,9 +975,10 @@ hr {
   .intro-description {
     grid-column: 2/7;
     grid-row: 7;
+    align-self: start;
     text-align: left;
-    font-size: 1.15rem;
-    line-height: 2;
+    font-size: 1.1rem;
+    line-height: 1.75;
   }
 }
 @media screen and (min-width: 64em) and (max-width: 1230px) {
@@ -990,12 +992,12 @@ hr {
     grid-column: 2/4;
     grid-row: 9;
     padding: 1em 0.1em;
-    line-height: 0.2em;
+    line-height: 0.1em;
     margin: 0;
-    justify-self: center;
-    width: 77%;
+    width: 75%;
     border: 2px white solid;
     justify-self: left;
+    align-self: center;
   }
   .view-plans:hover {
     text-decoration: none;
@@ -1022,6 +1024,7 @@ hr {
     grid-row: 5;
     z-index: 5;
     align-self: top;
+    padding-top: 2em;
   }
 }
 @media all and (min-width: 64em) {
