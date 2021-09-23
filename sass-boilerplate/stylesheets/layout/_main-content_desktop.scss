@@ -1,7 +1,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 0 0 repeat(24, 2.95rem);
+    grid-template-rows: 0 0 0 0 repeat(23, 2.95rem);
     gap: 1em;
     row-gap: 2em;
 }
@@ -26,23 +26,26 @@
 .horizontal-line-intro {
     display: inline;
     grid-column: 2/4;
-    grid-row: 4;
+    grid-row: 5;
     color: rgb(255, 255, 255);
     opacity: 100%;
     width: 90%;
     height: 0;
     justify-self: center;
-    align-self: center;
+    align-self: start;
 }
 
 .intro-title {
     position: static;
     grid-column: 2/7;
     grid-row: 5;
+    align-self: start;
+
     text-align: left;
     // margin-left: 1em;
     font-size: 4rem;
     margin: 0;
+    padding-top: 0.25em;
 
     @media screen and (max-width: 1230px) {
         font-size: 3rem;
@@ -100,8 +103,9 @@
 .intro-image-desktop {
     display: block;
     grid-column: 7/9;
-    grid-row: 4;
+    grid-row: 5;
     z-index: 5; 
+    align-self: top;
 }
 
 .left-image-desktop {
